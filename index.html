@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding:20px 40px;
+            border:1px solid palegoldenrod;
+            background-color: beige;
+            font-size: 24px;
+            color:black;
+            border-radius: 20px;
+            animation-name: move;  
+            animation-duration: 4s;
+            animation-timing-function:linear;
+            animation-iteration-count: infinite;   
+        }
+        div >button{
+            margin: 20vh;
+            text-align: center;
+        }
+        @keyframes move{
+         0%{
+             transform: translateX(0px);
+            }
+           /* 25%{
+                transform:translateX(100px);
+            }*/
+            40%{
+              transform: translateX(100px) ;  
+            }
+         50%{
+             transform:translateX(400px);
+          }
+          60%{
+            transform: translateX(-100px) rotate(270deg) ;
+          }
+          70%{
+            transform:translateX(-200px) rotate(90deg) ;
+          }
+         80%{
+            transform:translateX(150px) rotate(360deg);
+          }
+         100%{
+            transform:translateX(0px) rotate(0deg);
+         }  
+                
+        
+    </style>
+</head>
+<body>
+    <div>
+    <p>This is animation testing</p>
+    <button>CSS</button>
+    </div>
+</body>
+</html>
